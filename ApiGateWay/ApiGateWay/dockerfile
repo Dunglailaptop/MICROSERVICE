@@ -1,0 +1,16 @@
+# Sử dụng hình ảnh .NET Core SDK để xây dựng ứng dụng
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+
+# Sao chép tất cả các tệp tin và thư mục từ thư mục gốc dự án vào /app trong container
+COPY . .
+
+# Restore dependencies và xây dựng ứng dụng
+RUN dotnet restore
+RUN dotnet build -c Release -o /app/build
+
+# Sử dụng hình ảnh ASP.NET Core runtime để chạy ứng dụng
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+COPY --from=build /app/build .
+ENTRYPOINT ["dotnet", "ApiGateWay.dll"]

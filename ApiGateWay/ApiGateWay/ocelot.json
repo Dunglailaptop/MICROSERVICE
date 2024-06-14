@@ -1,0 +1,53 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/WeatherForecast",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5238
+          }
+        ],
+        "UpstreamPathTemplate": "/WeatherForecast",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/Account",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5216
+          }
+        ],
+        "UpstreamPathTemplate": "/Account",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/Users/GetListUser",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5111
+          }
+        ],
+        "UpstreamPathTemplate": "/users",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/UserPermission/GetListUserPermission",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5002
+          }
+        ],
+        "UpstreamPathTemplate": "/UserPermission",
+        "UpstreamHttpMethod": [ "GET"]
+      }
+    ]
+  }
+  

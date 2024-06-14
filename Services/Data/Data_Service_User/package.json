@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "prisma": "^5.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "luxon": "^3.4.4"
+  }
+}

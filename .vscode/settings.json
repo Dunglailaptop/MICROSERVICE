@@ -1,0 +1,5 @@
+{
+    "editor.suggest.showIcons": true,
+    "workbench.editor.showIcons": true,
+    "git.ignoreLimitWarning": true
+}

@@ -1,0 +1,14 @@
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\bin\Debug\net8.0\LibraryAuthentication.deps.json
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\bin\Debug\net8.0\LibraryAuthentication.dll
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\bin\Debug\net8.0\LibraryAuthentication.pdb
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.AssemblyInfoInputs.cache
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.AssemblyInfo.cs
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.csproj.CoreCompileInputs.cache
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.dll
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\refint\LibraryAuthentication.dll
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.pdb
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\ref\LibraryAuthentication.dll
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\bin\Debug\net8.0\LibraryAuthentication.runtimeconfig.json
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.genruntimeconfig.cache
+C:\Users\ndung\OneDrive\Documents\web\MicroserviceAppChat\Services\AuthenticationService\LibraryAuthentication\LibraryAuthentication\obj\Debug\net8.0\LibraryAuthentication.csproj.AssemblyReference.cache

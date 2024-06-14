@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Services",
+    "\\Services\\AuthenticationService",
+    "\\Services\\AuthenticationService\\JWTAuthenticationManager",
+    "\\Services\\User.Service",
+    "\\Services\\User.Service\\Properties"
+  ],
+  "SelectedNode": "\\Services\\AuthenticationService\\JWTAuthenticationManager\\JWTTokenHandler.cs",
+  "PreviewInSolutionExplorer": false
+}

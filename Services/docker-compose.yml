@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  apigateway:
+    image: "${DOCKER_REGISTRY-}apigateway"
+    build:
+      context: .
+      dockerfile: AuthenticaionService/AuthenticaionService/dockerfile
+    ports:
+      - "8001:80"
+    networks:
+      - backend
+
+  authenticationwebapi:
+    container_name: authentication-api
+    image: "${DOCKER_REGISTRY-}authenticationwebapi"
+    build:
+      context: .
+      dockerfile: AuthenticaionService/AuthenticaionService/dockerfile
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

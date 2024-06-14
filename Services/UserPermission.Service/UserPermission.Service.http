@@ -1,0 +1,6 @@
+@UserPermission.Service_HostAddress = http://localhost:5002
+
+GET {{UserPermission.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

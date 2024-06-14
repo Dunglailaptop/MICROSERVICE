@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  IdUsers    Int      @id @default(autoincrement())
+  CodeUsers  String   @db.VarChar(50)
+  Username   String   @db.VarChar(150)
+  Password   String   @db.VarChar(150)
+  Status     Boolean  @default(true)
+  DateCreate DateTime @default(now())
+  DateUpdate DateTime @updatedAt
+  IdRole     Int
+}
+
+model DetailUsers {
+  IdDetailUsers   Int       @id @default(autoincrement())
+  CodeDetailUsers String?   @db.VarChar(50)
+  FullName        String    @db.VarChar(150)
+  Phone           String?   @db.Char(10)
+  Email           String?   @db.VarChar(150)
+  DateOfBirth     DateTime?
+  Description     String?   @db.VarChar(255)
+  Sex             Int?
+  Address         String?   @db.VarChar(255)
+  IdImage         Int
+  IdUsers         Int
+}
+
+model Role {
+  IdRole     Int      @id @default(autoincrement())
+  CodeRole   String?  @db.VarChar(50)
+  NameRole   String?  @db.VarChar(150)
+  Status     Boolean  @default(true)
+  DateCreate DateTime @default(now())
+  DateUpdate DateTime @updatedAt
+}
+
+model UserPermissions {
+  IdUserPermssions    Int     @id @default(autoincrement())
+  CodeUserPermssions  String? @db.VarChar(50)
+  NameUserPermissions String? @db.VarChar(150)
+  IsRead              Boolean @default(true)
+  IsCreate            Boolean @default(true)
+  IsDelete            Boolean @default(true)
+  IsEdit              Boolean @default(true)
+  IdRole              Int
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "D5az/g7wdiXPWuyN2VbGJxMlsd2DvEBwQDtcQTidEMM=",
+  "Source": "AuthenticationTokenService",
+  "BasePath": "_content/AuthenticationTokenService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
