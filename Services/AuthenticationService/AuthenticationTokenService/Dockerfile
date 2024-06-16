@@ -1,25 +1,38 @@
-# Sử dụng hình ảnh .NET Core SDK để xây dựng ứng dụng
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
-EXPOSE 90
-
+# Sử dụng image .NET SDK để build project
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+# Thiết lập thư mục làm việc
 WORKDIR /src
-COPY ["AuthenticationService/AuthenticationTokenService/AuthenticationTokenService.csproj", "AuthenticationService/AuthenticationTokenService/"]
-COPY ["AuthenticationService/LibraryAuthentication/LibraryAuthentication/LibraryAuthentication.csproj", "AuthenticationService/LibraryAuthentication/LibraryAuthentication/"]
+
+# Sao chép file .csproj của project chính và thư viện bên ngoài
+COPY ["AuthenticationTokenService/AuthenticationTokenService.csproj", "AuthenticationService/AuthenticationTokenService/"]
+COPY ["LibraryAuthentication/LibraryAuthentication/LibraryAuthentication.csproj", "AuthenticationService/LibraryAuthentication/LibraryAuthentication/"]
+
+# Restore các dependencies
 RUN dotnet restore "AuthenticationService/AuthenticationTokenService/AuthenticationTokenService.csproj"
-COPY . .
+
+# Sao chép toàn bộ project và thư viện bên ngoài
+COPY AuthenticationTokenService/ "AuthenticationService/AuthenticationTokenService/"
+COPY LibraryAuthentication/LibraryAuthentication "AuthenticationService/LibraryAuthentication/LibraryAuthentication/"
+
+# Build project
 WORKDIR "/src/AuthenticationService/AuthenticationTokenService"
 RUN dotnet build "AuthenticationTokenService.csproj" -c Release -o /app/build
 
+# Publish project
 FROM build AS publish
 RUN dotnet publish "AuthenticationTokenService.csproj" -c Release -o /app/publish
 
-FROM base AS final
+# Sử dụng image ASP.NET Core runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+
+# Thiết lập thư mục làm việc cho giai đoạn cuối
 WORKDIR /app
+
+# Sao chép các file đã publish từ giai đoạn build
 COPY --from=publish /app/publish .
+
+EXPOSE 8080
+
+# Thiết lập entry point cho ứng dụng
 ENTRYPOINT ["dotnet", "AuthenticationTokenService.dll"]
-
-
-
-
