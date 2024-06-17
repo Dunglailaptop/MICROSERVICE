@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthenticationTokenService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d014ddb2f98cbe4568ebd397284fddf8372e4d1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f91d76793b5b3f191e004127afa3dcbc5113edb")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthenticationTokenService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthenticationTokenService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

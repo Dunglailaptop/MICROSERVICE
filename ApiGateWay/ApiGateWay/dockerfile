@@ -3,14 +3,33 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Sao chép tất cả các tệp tin và thư mục từ thư mục gốc dự án vào /app trong container
-COPY . .
+COPY ["ApiGateWay/ApiGateWay/ApiGateWay.csproj","ApiGateWay/ApiGateWay/"]
 
-# Restore dependencies và xây dựng ứng dụng
-RUN dotnet restore
-RUN dotnet build -c Release -o /app/build
+RUN dotnet restore "ApiGateWay/ApiGateWay/ApiGateWay.csproj"
 
-# Sử dụng hình ảnh ASP.NET Core runtime để chạy ứng dụng
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+# Sao chép toàn bộ project và thư viện bên ngoài
+COPY ApiGateWay/ApiGateWay "ApiGateWay/ApiGateWay/"
+
+
+# Build project
+WORKDIR "/app/ApiGateWay/ApiGateWay/"
+RUN dotnet build "ApiGateWay.csproj" -c Release -o /app/build
+
+# Publish project
+FROM build AS publish
+RUN dotnet publish "ApiGateWay.csproj" -c Release -o /app/publish
+
+# Sử dụng image ASP.NET Core runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+
+# Thiết lập thư mục làm việc cho giai đoạn cuối
 WORKDIR /app
-COPY --from=build /app/build .
+
+# Sao chép các file đã publish từ giai đoạn build
+COPY --from=publish /app/publish .
+
+# Expose the port the app runs on
+EXPOSE 8080
+
+# Thiết lập entry point cho ứng dụng
 ENTRYPOINT ["dotnet", "ApiGateWay.dll"]

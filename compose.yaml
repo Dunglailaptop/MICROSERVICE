@@ -1,0 +1,24 @@
+
+
+services:
+  # authentication-service:
+  #   build:
+  #     context: .
+  #     dockerfile: Services/AuthenticationService/AuthenticationTokenService/Dockerfile
+  #   container_name: authentications-services
+  #   ports:
+  #     - "5000:8080" # Mở cổng 5000 cho dịch vụ
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  
+  apigateway:
+    build:
+      context: .
+      dockerfile: ApiGateWay/ApiGateWay/Dockerfile
+    container_name: Apigateways-services
+    ports:
+      - "5253:8080" # Mở cổng 5000 cho dịch vụ
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    
+  

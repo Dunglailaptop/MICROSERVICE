@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sOz5YAvmjgq7+NOKrwOTAOlw/dwB1F8ZgRPDR8VJZy691eHUbfztGfd7ddpaOtH/5Ht5nXyjqM0RlstoKDY1Kg==",
+  "dgSpecHash": "hszqghuHWnVALhUwCBDf3wMzZPfLGfbdJkUBYPHJhECVqqUebh+kop7w6hTqmIIcIXXhICocIygSjI8ppaUsgg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj",
+  "projectFilePath": "C:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ndung\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\ndung\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj": {}
+    "C:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj": {
+    "C:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj",
+        "projectUniqueName": "C:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj",
         "projectName": "ApiGateWay",
-        "projectPath": "c:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj",
+        "projectPath": "C:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\ApiGateWay.csproj",
         "packagesPath": "C:\\Users\\ndung\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\obj\\",
+        "outputPath": "C:\\Users\\ndung\\OneDrive\\Documents\\web\\MICROSERVICE\\MicroserviceAppChat\\ApiGateWay\\ApiGateWay\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
